@@ -39,6 +39,6 @@ function highlight ({ value, lang }, tag = 'pre') {
   const codeTag = `<code class="${className}">${code}</code>`
 
   return tag === 'pre'
-    ? `<pre class="${className}">${codeTag}</pre>`
+    ? `<pre class="${className} line-numbers">${codeTag}</pre>`
     : codeTag
 }
